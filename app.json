@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "kinetic_quest_huawei",
+    "slug": "kinetic_quest_huawei"
+  }
+}
