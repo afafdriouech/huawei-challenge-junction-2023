@@ -1,9 +1,8 @@
-// HomeScreen.js
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import styles from './styles'; // Adjust the path
-import StoryDetails from '../map/StoryDetails'; // Adjust the path
+import styles from './styles';
+import StoryDetails from '../map/StoryDetails';
 
 // Dummy data for story categories with images
 const storyCategories = [
@@ -11,7 +10,7 @@ const storyCategories = [
     id: 1,
     title: 'The Mysterious Mansion',
     description: 'Explore the secrets of an old mansion in this thrilling detective story.',
-    image: require('../../assets/images/mansion.jpg'), // Add your image paths
+    image: require('../../assets/images/mansion.jpg'),
   },
   {
     id: 2,
@@ -19,7 +18,6 @@ const storyCategories = [
     description: 'Solve puzzles and uncover the truth as you navigate through a mysterious city.',
     image: require('../../assets/images/city.jpg'),
   },
-  // Add more categories as needed
 ];
 
 const HomeScreen = ({ navigation }) => {
