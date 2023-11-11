@@ -1,10 +1,10 @@
-import {View, Text} from 'react-native';
+// App.js
+import { NavigationContainer } from '@react-navigation/native';
+import InvestigationMap from './InvestigationMap';
 
 const Home = () => {
     return (
-        <View>
-            <Text>Home</Text>
-        </View>
+        <InvestigationMap />
     )
 }
 
