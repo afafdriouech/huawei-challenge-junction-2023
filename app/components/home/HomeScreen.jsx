@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import styles from './styles'; // Adjust the path
-import StoryDetails from '../map/StoryDetails'; // Adjust the path
+import StoryDetails from '../map/MapScreen'; // Adjust the path
 
 // Dummy data for story categories with images
 const storyCategories = [
@@ -30,7 +30,7 @@ const HomeScreen = ({ navigation }) => {
         <TouchableOpacity
           key={category.id}
           style={styles.storyCard}
-          onPress={() => navigation.navigate('StoryDetails', { category })}
+          onPress={() => navigation.navigate('MapScreen', { category })}
         >
           <Image source={category.image} style={styles.storyImage} />
           <Text style={styles.storyTitle}>{category.title}</Text>
