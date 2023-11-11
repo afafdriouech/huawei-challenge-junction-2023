@@ -1,15 +1,19 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './components/home/HomeScreen'; 
+import StoryDetails from './components/map/StoryDetails';
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      {/* Add more tabs/screens as needed */}
-    </Tab.Navigator>
+    <NavigationContainer independent={true}>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="StoryDetails" component={StoryDetails} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
